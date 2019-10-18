@@ -1,0 +1,25 @@
+.home-page {
+    height: 100vh;
+    width: 100vw;
+}
+
+.home-page-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( rgba(22, 21, 21, 0.5), rgba(46, 28, 28, 0.5) ), url(/assets/img/homepage-background.jpg);
+}
+
+.home-page-image img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #ddd;
+    max-height: 100vh;
+}
+
+.know-me-button {
+    width: fit-content;
+    align-self: center
+}
+
+.know-me-button:hover {
+    color: white!important;
+}
