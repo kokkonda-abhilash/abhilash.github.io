@@ -2,42 +2,49 @@
     <app-navbar class="about-me-navbar"></app-navbar>
 </section>
 
-<h3 class="text-lead font-weight-bold text-center mt-3" style="color:#ff8000;"><i class="far fa-hourglass"></i> <u>Experience Summary</u></h3>
+<h1 class="text-lead text-lead text-center mt-3">Experience Summary</h1>
 
-<div class="card bg-primary mx-3 mt-3 mb-3">
-    <div class="row m-1 bg-white">
-        <div class="col">
-            <div class="card-body bg-primary my-3 text-white">
-                <h5 class="card-title font-weight-bold text-center"><u>Cognizant Technology Solutions</u></h5>
-                <p class="card-text">Worked with <b>Cognizant</b> for five years. Had worked as APIs developer using <b>Node & Java</b> technologies</p>
+<div class="container-fluid">
+    <div class="card-deck">
+
+        <div class="card bg-primary">
+            <div class="card-body bg-white m-1">
+                <h3 class="card-title font-weight-bold text-primary text-center mb-0"><u>Cognizant Technology Solutions</u></h3>
+                <p class="card-text text-center text-muted mt-0"><i><small>Worked with Cognizant for five years. Had worked as APIs developer using <b>Node & Java</b> technologies</small></i></p>
             </div>
-            <div class="card-header bg-primary text-white font-weight-bold"><u>Summary:</u></div>
-            <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item bg-primary text-white">Involved in developing <b>AWS API Gateway - Lambda based microservices</b> during the recent 1.5 years.</li>
-                <li class="list-group-item bg-primary text-white">Had designed and developed ReST APIs</li>
-                <li class="list-group-item bg-primary text-white"><b>Lead developer dealing with various modules of the application</b> like Quotes, Payments, Callback, Statements, Billing and Consumption.</li>
-                <li class="list-group-item bg-primary text-white">Involved in imparting knowledge transfer sessions on various modules of the application.</li>
-                <li class="list-group-item bg-primary text-white">Involved in <b>writing and reviewing code of peers</b>  there by maintaining code quality and code uniformity.</li>
+            <div class="card-header text-white font-weight-bold"><u>Summary:</u></div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-primary text-white">>><b> Lead developer dealing with various modules of the application</b> like Quotes, Payments, Callback, Statements, Billing and Consumption.</li>
+                <li class="list-group-item bg-primary text-white">>> Design and development of ReST APIs</li>
+                <li class="list-group-item bg-primary text-white">>> Imparting knowledge transfer sessions on various modules of the application.</li>
+                <li class="list-group-item bg-primary text-white">>> Religious participation in peer review discussions there by maintaining code quality.</li>
+                <li class="list-group-item bg-primary text-white">>> Estimations and planning of new change requests and/or migrating existing changes to <b>AWS Cloud</b>.</li>
+                <!--
+                    <li class="list-group-item border-primary text-center"><button class="btn btn-outline-primary">Technologies</button></li>
+                -->
+                <li class="list-group-item border-primary text-center"><button class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">Technologies</button></li>
+            </ul>
+        </div>
+
+        <div class="card bg-danger">
+            <div class="card-body bg-white m-1">
+                <h3 class="card-title font-weight-bold text-center text-danger mb-0"><u>Cognizant Technology Solutions</u></h3>
+                <p class="card-text text-center mt-0 text-muted"><i><small>Worked with Cognizant for five years. Had worked as APIs developer using <b>Node & Java</b> technologies</small></i></p>
+            </div>
+            <div class="card-header bg-danger text-white font-weight-bold"><u>Summary:</u></div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-danger text-white">>> Involved in developing <b>AWS API Gateway - Lambda based microservices</b> during the recent 1.5 years.</li>
+                <li class="list-group-item bg-danger text-white">>> Had designed and developed ReST APIs</li>
+                <li class="list-group-item bg-danger text-white">>> <b>Lead developer dealing with various modules of the application</b> like Quotes, Payments, Callback, Statements, Billing and Consumption.</li>
+                <li class="list-group-item bg-danger text-white">>> Involved in imparting knowledge transfer sessions on various modules of the application.</li>
+                <li class="list-group-item bg-danger text-white">>> Involved in <b>writing and reviewing code of peers</b>  there by maintaining code quality and code uniformity.</li>
+                <!--
+                    <li class="list-group-item border-danger text-center"><button class="btn btn-outline-danger">Technologies</button></li>
+                -->
+                <li class="list-group-item border-danger text-center"><button class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModal">Technologies</button></li>
             </ul>
         </div>
     </div>
 </div>
 
-<div class="card bg-warning mx-3 mt-3 mb-3">
-    <div class="row m-1 bg-white">
-        <div class="col">
-            <div class="card-body bg-warning my-3 text-white">
-                <h5 class="card-title font-weight-bold text-center"><u>Cognizant Technology Solutions</u></h5>
-                <p class="card-text">Worked with <b>Cognizant</b> for five years. Had worked as APIs developer using <b>Node & Java</b> technologies</p>
-            </div>
-            <div class="card-header bg-warning text-white font-weight-bold"><u>Summary:</u></div>
-            <ul class="list-group list-group-flush mb-3">
-                <li class="list-group-item bg-warning text-white">Involved in developing <b>AWS API Gateway - Lambda based microservices</b> during the recent 1.5 years.</li>
-                <li class="list-group-item bg-warning text-white">Had designed and developed ReST APIs</li>
-                <li class="list-group-item bg-warning text-white"><b>Lead developer dealing with various modules of the application</b> like Quotes, Payments, Callback, Statements, Billing and Consumption.</li>
-                <li class="list-group-item bg-warning text-white">Involved in imparting knowledge transfer sessions on various modules of the application.</li>
-                <li class="list-group-item bg-warning text-white">Involved in <b>writing and reviewing code of peers</b>  there by maintaining code quality and code uniformity.</li>
-            </ul>
-        </div>
-    </div>
-</div>
+<app-technology-stack></app-technology-stack>

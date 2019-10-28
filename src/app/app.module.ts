@@ -7,6 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ExperiencesummaryComponent } from './experiencesummary/experiencesummary.component';
+import { TechnologyStackComponent } from './technology-stack/technology-stack.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DownloadresumeService } from './downloadresume.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +20,23 @@ import { ExperiencesummaryComponent } from './experiencesummary/experiencesummar
     HomeComponent,
     AboutmeComponent,
     NavbarComponent,
-    ExperiencesummaryComponent
+    ExperiencesummaryComponent,
+    TechnologyStackComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    DownloadresumeService
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    TechnologyStackComponent
+  ]
 })
 export class AppModule { }

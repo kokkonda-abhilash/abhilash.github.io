@@ -7,12 +7,22 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+              <a class="nav-link text-white" [routerLink]="['/about-me']">About me <span class="sr-only">(current)</span></a>
+          </li>
         <li class="nav-item active">
-          <a class="nav-link text-white" href="#"><i class="fas fa-certificate"></i> Certifications <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white" [routerLink]="['/certifications']"><i class="fas fa-certificate"></i> Certifications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#"><i class="fa fa-download" aria-hidden="true"> </i>Resume</a>
+          <a class="nav-link text-white" style="cursor: pointer" (click)='downloadResume()'><i class="fa fa-download" aria-hidden="true"> </i>Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" [routerLink]="['/experience-summary']">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModal">Technologies</a>
         </li>
       </ul>
     </div>
 </nav>
+<app-technology-stack></app-technology-stack>

@@ -1,0 +1,11 @@
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 70vh;
+    overflow-y: auto;
+}
+
+/* .mat-dialog-container {
+    background: white;
+} */

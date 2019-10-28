@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperiencesummaryComponent implements OnInit {
 
-  private experienceSummary = [
-    {
-      company: 'Cognizant Technology Solutions'
-    }
-  ];
 
   constructor() { }
 
