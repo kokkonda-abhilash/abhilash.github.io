@@ -13,6 +13,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DownloadresumeService } from './downloadresume.service';
 import { HttpClientModule } from '@angular/common/http';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CertificationsComponent } from './certifications/certifications.compone
     NavbarComponent,
     ExperiencesummaryComponent,
     TechnologyStackComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,

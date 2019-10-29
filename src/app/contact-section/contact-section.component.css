@@ -1,0 +1,6 @@
+.contact-me-background {
+    background-image: linear-gradient( rgba(15, 15, 15, 0.5), rgba(14, 6, 6, 0.5) ), url(/assets/img/contact-me.jpg);
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
