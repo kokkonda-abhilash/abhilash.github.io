@@ -8,22 +8,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-              <a class="nav-link text-white" [routerLink]="['/about-me']">About me <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" [routerLink]="['/about-me']"><i class="fas fa-user-alt"></i> About me <span class="sr-only">(current)</span></a>
           </li>
         <li class="nav-item active">
           <a class="nav-link text-white" [routerLink]="['/certifications']"><i class="fas fa-certificate"></i> Certifications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" style="cursor: pointer" (click)='downloadResume()'><i class="fa fa-download" aria-hidden="true"> </i>Resume</a>
+          <a class="nav-link text-white disabled" style="cursor: pointer" (click)='downloadResume()'><i class="fa fa-download" aria-hidden="true"></i> Resume</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" [routerLink]="['/experience-summary']">Experience</a>
+            <a class="nav-link text-white" [routerLink]="['/experience-summary']"><i class="fab fa-canadian-maple-leaf"></i> Experience</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModal">Technologies</a>
+          <a class="nav-link text-white" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cogs"></i> Technologies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" [routerLink]="['/contact']">Contact</a>
+          <a class="nav-link text-white" [routerLink]="['/contact']"><i class="fas fa-address-card"></i> Contact</a>
         </li>
       </ul>
     </div>
