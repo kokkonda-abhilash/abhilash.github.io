@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DownloadresumeService } from '../downloadresume.service';
+// tslint:disable-next-line: import-blacklist
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-aboutme',
@@ -12,10 +14,15 @@ export class AboutmeComponent implements OnInit {
 
   downloadResume() {
     this.resumeService.download()
-      .subscribe(response => {
-        const blob: any = new Blob([response.blob()], { type: 'application/octet-stream; charset=utf-8' });
-        window.location.href = response.url;
-      });
+      .subscribe(response => this.doanloadResume(response),
+      error => console.log('error downloading the resume' + error),
+      () => console.log('downloaded resume'));
+  }
+
+  private doanloadResume(data: any) {
+    const blob = new Blob([data], {type: 'application/octet-stream'});
+    const url = window.URL.createObjectURL(blob);
+    window.open(url);
   }
 
   ngOnInit() {

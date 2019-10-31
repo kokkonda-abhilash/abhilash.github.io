@@ -7,18 +7,11 @@ import { Observable } from 'rxjs';
 })
 export class DownloadresumeService {
 
-  private readonly url = 'https://raw.githubusercontent.com/mstraining/resume/master/DBS-Profile-Updated.pdf';
+  private readonly url = '/assets/documents/resume.docx';
 
   constructor(private http: HttpClient) { }
 
   download(): Observable<any> {
-    return this.http.get(this.url, {
-      headers: {
-        'Content-Type': 'application/octet-stream',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With'
-      }, responseType: 'blob'
-    });
+    return this.http.get(this.url);
   }
 }
