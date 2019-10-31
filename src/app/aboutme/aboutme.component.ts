@@ -12,14 +12,14 @@ export class AboutmeComponent implements OnInit {
 
   constructor(private resumeService: DownloadresumeService) { }
 
-  downloadResume() {
+  downloadResume(): void {
     this.resumeService.download()
-      .subscribe(response => this.doanloadResume(response),
+      .subscribe(response => this.downloadFile(response),
       error => console.log('error downloading the resume' + error),
       () => console.log('downloaded resume'));
   }
 
-  private doanloadResume(data: any) {
+  private downloadFile(data): void {
     const blob = new Blob([data], {type: 'application/octet-stream'});
     const url = window.URL.createObjectURL(blob);
     window.open(url);
